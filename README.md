@@ -6,7 +6,7 @@ EV3Aero is a fully open-source flight control system designed for use with LEGO 
 ---
 
 ## 📦 Features Overview
--------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 | Feature                     | Description                                                                                                            |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 🔁 Modular Design           | Supports pitch/roll/throttle inputs via motors or sensors, easily extendable                                           |
