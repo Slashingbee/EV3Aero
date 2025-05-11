@@ -16,7 +16,7 @@ Thank you for considering contributing to **EV3Aero**! We greatly appreciate any
 To begin contributing, the first step is to **fork** the repository. This creates a personal copy of the repository under your GitHub account.
 
 #### Steps:
-1. Go to the [EV3Aero repository](https://github.com/Slash34/EV3Aero).
+1. Go to the [EV3Aero repository](https://github.com/slashingbee/EV3Aero).
 2. Click on the **"Fork"** button in the top-right corner to create a copy of the repository in your GitHub account.
 
 ---
@@ -27,7 +27,7 @@ Once you've forked the repository, clone it to your local machine so that you ca
 #### Steps:
 1. In your terminal, run the following command to clone the official repo (can be the fork you just made.):
    ```bash
-   git clone https://github.com/Slash34/EV3Aero.git
+   git clone https://github.com/slashingbee/EV3Aero.git
    cd EV3Aero
    ```
 
@@ -54,7 +54,7 @@ Once you've made and tested your changes, commit them with a descriptive message
 
 #### Example:
 ```bash
-git commit -m "Add not official components"
+git commit -m "Add unofficial components"
 ```
 
 ---
@@ -73,7 +73,7 @@ git push origin feature/my-new-feature
 Once your changes are pushed to GitHub, it’s time to create a **Pull Request** (PR) to submit your work.
 
 #### Steps:
-1. Go to the **[EV3Aero repository](https://github.com/Slash34/EV3Aero)**.
+1. Go to the **[EV3Aero repository](https://github.com/slashingbee/EV3Aero)**.
 2. Click on the **"Pull Requests"** tab.
 3. Click the **"New Pull Request"** button.
 4. Ensure that the request is going to the "contrib" branch of the official repo! **Only that will be accepted as a pull request.**
