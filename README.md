@@ -99,3 +99,14 @@ python main.py
 
 ---
 
+## Important info
+
+- The contribution branch is automatically synced, once every a while to the beta branch (with the addition of mine beta features). It might not be stable and might not operate as intended. The main branch should be tested and stable, bug fix report's are a priority.
+- The past-*version* branches are version's that were in use before the main branch.
+- The contribute.md file show's how can you contribute, implement, add feature's or fork the repo for your improvement.
+- Issue report's help make the program better
+- If there is anything that needs to be change'd in the readme, file a issue or push request.
+- When contributing, aim to maintain clean, readable code with proper documentation. Follow the coding standards outlined in the repo to ensure consistency.
+- Always make sure to test the change's you add. Not working code will not be accepted, or will be removed or resolved later.
+- Note the license of the following project is important when u want to make edit's or make your own version public. Private projects aren't taken into account.
+---
