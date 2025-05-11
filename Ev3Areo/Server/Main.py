@@ -1,4 +1,4 @@
-import socket
+#import socket
 import pygame
 import sys
 import time
@@ -24,8 +24,8 @@ def get_motor_positions(ip_address, port, retries=60, delay=0.5):
     return "N/A", "N/A", "N/A", "N/A"
 
 def main():
-    ip_address = '192.168.1.119'  # IP of the device sending motor data
-    port = 12345  # Port to connect to
+    ip_address = 'EV3-IP'  #  [LOCAL] IP of the device sending motor data (replaced random local ip with placeholder). (if using custom connection might not be needed)
+    port = 12345  # Port to connect to (default port).
 
     # Set limits for motor positions
     limit_a = 40  
