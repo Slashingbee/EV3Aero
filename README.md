@@ -19,19 +19,83 @@ EV3Aero is a fully open-source flight control system designed for use with LEGO 
 
 ## 🔧 Requirements
 
-- LEGO EV3 Brick (running ev3dev or compatible OS with python support)
+- LEGO EV3 Brick *(running ev3dev or compatible OS with python support (tested on 2.7 but will ***[Experimentally]*** work on 2.x and 3.x) and the ev3dev package)*
 - At least 1 EV3 motor or sensor for input (e.g., throttle axis)
 - USB , Bluetooth or TCP/IP (default), connection to a host PC
 - Optional: X-Plane or MSFS for sim integration (any game that utilises a gamepad will work
 
----
 
 ## 🛠️ Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/EV3Aero.git
-cd EV3Aero
+EV3Aero is split into two parts:
+- **Client**: Runs on the LEGO EV3 brick (requires `ev3dev` or compatible OS).
+- **Server**: Runs on the host PC and handles input/output to simulators or other targets.
+- By **Default** the script use's the ev3 central button (OK or Confirm button) to set all position's as the center of the axis.
 
-# Transfer to your EV3 device and run (Python 3 required)
-python3 ev3aero.py
+---
+
+### 📅 1. Clone the Repository
+
+```bash
+git clone https://github.com/slashingbee/EV3Aero.git
+cd EV3Aero
+```
+
+---
+
+### 🤖 2. Install on EV3 Brick (Client)
+
+#### Prerequisites:
+- EV3 running **ev3dev** or a Debian-based OS with Python 3.x or 2.x (Only tested by me on 2.7). 
+- SSH or USB access to the EV3 brick (or other thru vscode).
+
+#### Steps:
+```bash
+# On your EV3, transfer the Client files
+scp -r Client/Ev3Aero/ robot@ev3dev.local:~/EV3Aero
+
+# SSH into the EV3
+ssh robot@ev3dev.local
+
+# On the EV3:
+cd EV3Aero
+python3 main.py
+
+# You can also use Visual Studio Code Ev3Dev extenstion to transfer and run the file easier.
+```
+
+---
+
+### 💻 3. Install on Host PC (Server)
+
+#### Prerequisites:
+- Python 3.x installed (3.9 or higher was tested as working.)
+- Any game/sim that supports game controllers (e.g., MSFS, X-Plane)
+
+#### Steps:
+
+```bash
+# Move to the Server directory
+cd Server
+
+# (Optional) Create a virtual environment
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Run the server-side controller interface
+python main.py
+```
+
+---
+
+### 🔄 4. Connect Client and Server
+
+- Ensure both devices are on the same network (Wi-Fi , Wi-Fi over HOTSPOT, or USB/BLUETOOTH with different configuration).
+- The Client sends control data over sockets or Bluetooth to the Server.
+- The Server processes inputs and sends them to the sim as HID/gamepad signals or custom events.
+
+---
+
