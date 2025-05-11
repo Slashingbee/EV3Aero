@@ -3,25 +3,25 @@
 import socket
 import time
 import math
-from ev3dev2.motor import LargeMotor, MediumMotor, OUTPUT_A, OUTPUT_B, OUTPUT_C  # type: ignore
-from ev3dev2.sensor.lego import TouchSensor  # type: ignore
-from ev3dev2.sensor import INPUT_1  # type: ignore
-from ev3dev2.button import Button  # type: ignore
+from ev3dev2.motor import LargeMotor, MediumMotor, OUTPUT_A, OUTPUT_B, OUTPUT_C  
+from ev3dev2.sensor.lego import TouchSensor  
+from ev3dev2.sensor import INPUT_1  
+from ev3dev2.button import Button  
 
 # Adjustable parameters
-REFRESH_RATE = 0.001  # Refresh rate in seconds (1 milliseconds)
-DEADZONE = 5  # Slightly increased deadzone to avoid unnecessary micro-movements
+REFRESH_RATE = 0.001  # Refresh rate in seconds 
+DEADZONE = 5  # Deadzone to avoid unnecessary micro-movements
 MAX_ANGLE_A = 40  # Maximum angle to scale the curve for motor A
 MAX_ANGLE_B = 60  # Maximum angle to scale the curve for motor B
 MAX_ANGLE_C = 90   # Limit for motor C movement
 MAX_DUTY_CYCLE_A = 35  # Reduced maximum motor duty cycle to reduce power
 MAX_DUTY_CYCLE_B = 20  # Increased power for motor B
 SMOOTHING_FACTOR = 0.3  # Increased smoothing factor to reduce overshoot
-STALL_THRESHOLD = 0.999  # Improved stall detection threshold
+STALL_THRESHOLD = 0.999  # Stall detection point (Placeholder for now, doesnt work properly.)
 MOTION_TIMEOUT = 0.1  # Time in seconds before locking activation
 RESET_POSITION_VALUE = 0  # Value to set when button OK is pressed
 
-# PID parameters (adjusted to reduce overshoot)
+# PID parameters 
 KP_A, KI_A, KD_A = 0.5, 0.00002, 0.001  # For motor A
 KP_B, KI_B, KD_B = 0.5, 0.00002, 0.001  # For motor B
 
@@ -46,7 +46,7 @@ last_movement_time_b = time.time()
 prev_error_a, integral_a = 0, 0
 prev_error_b, integral_b = 0, 0
 
-# Inertia simulation smoothing factor for motor C
+# Inertia simulation smoothing factor for motor C (Placeholder for now, doesnt work properly.)
 INERTIA_SMOOTHING_FACTOR = 0.5  # Adjust this factor for the desired inertia effect
 
 def get_motor_positions():
@@ -131,7 +131,7 @@ def check_button_press():
 
 # Create a socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_socket.bind(('0.0.0.0', 12345))
+server_socket.bind(('0.0.0.0', 12345)) # Use port 12345 by default.
 server_socket.listen(5)
 
 try:
