@@ -1,4 +1,4 @@
-#import socket
+import socket
 import pygame
 import sys
 import time
