@@ -126,7 +126,7 @@ python main.py
 - **[Pybricks](https://pybricks.com/)**  
   A Python environment for LEGO® hubs, great for structured, Python-based robotics programming.
 
-- **[leJOS](http://www.lejos.org/)**  
+- **[leJOS](https://lejos.sourceforge.io)**  
   A Java-based replacement firmware for LEGO Mindstorms, foundational for early programmable robot systems.
 
 ---
