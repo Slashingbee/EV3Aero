@@ -30,7 +30,7 @@ EV3Aero is a fully open-source flight control system designed for use with LEGO 
 EV3Aero is split into two parts:
 - **Client**: Runs on the LEGO EV3 brick (requires `ev3dev` or compatible OS).
 - **Server**: Runs on the host PC and handles input/output to simulators or other targets.
-- By **Default** the script use's the ev3 central button (OK or Confirm button) to set all position's as the center of the axis.
+- By **Default** the script use's the Ev3 central button (OK or Confirm button) to set all position's as the center of the axis.
 
 ---
 
@@ -39,6 +39,8 @@ EV3Aero is split into two parts:
 ```bash
 git clone https://github.com/slashingbee/EV3Aero.git
 cd EV3Aero
+cd Ev3Aero
+
 ```
 
 ---
@@ -109,4 +111,22 @@ python main.py
 - When contributing, aim to maintain clean, readable code with proper documentation. Follow the coding standards outlined in the repo to ensure consistency.
 - Always make sure to test the change's you add. Not working code will not be accepted, or will be removed or resolved later.
 - Note the license of the following project is important when u want to make edit's or make your own version public. Private projects aren't taken into account.
+---
+## Mentions
+
+---
+
+- **[ev3drive](https://github.com/Xgames123/evdrive)**  
+  A project that heavily inspired this work.
+
+- **[ev3dev](https://www.ev3dev.org)**  
+  The open-source operating system that made this possible.  
+  Source code available on [GitHub](https://github.com/ev3dev/ev3dev).
+
+- **[Pybricks](https://pybricks.com/)**  
+  A Python environment for LEGO® hubs, great for structured, Python-based robotics programming.
+
+- **[leJOS](http://www.lejos.org/)**  
+  A Java-based replacement firmware for LEGO Mindstorms, foundational for early programmable robot systems.
+
 ---
