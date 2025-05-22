@@ -133,3 +133,4 @@ python main.py
   A Java-based replacement firmware for LEGO Mindstorms, foundational for early programmable robot systems.
 
 ---
+Note: The client-side (EV3) runs on ev3dev and does not support external Python dependencies — all code is designed to run using built-in libraries only.
