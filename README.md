@@ -113,6 +113,8 @@ python main.py
 - Note the license of the following project is important when u want to make edit's or make your own version public. Private projects aren't taken into account.
 - The prototype version's dont have requirement file's (yet) so you have to download package's manually using PyPI (PIP).
 - More info on the version's is in the version.md file
+- The install guide is only gonna work on the main release, other version's **DO NOT HAVE INSTALL GUIDES** as they install differently and require manual installation!
+- Check the help wanted tag if you want to contribute and do not have idea's what to improve, there is propably task's there.
 ---
 ## Mentions
 
@@ -132,3 +134,4 @@ python main.py
   A Java-based replacement firmware for LEGO Mindstorms, foundational for early programmable robot systems.
 
 ---
+Note: The client-side (EV3) runs on ev3dev and does not support external Python dependencies — all code is designed to run using built-in libraries only.

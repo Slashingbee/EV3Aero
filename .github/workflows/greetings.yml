@@ -1,0 +1,16 @@
+name: Greetings
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "👋 Hi there! Welcome to the EV3Aero project — we're glad you're here! Thank you for opening your first issue. The ev3aero project is powered by the EV3Dev platform and community-driven innovation, so your feedback is really appreciated. One of the maintainers will review your report soon."
+        pr-message: "Thank you for your first contribution to EV3Aero! We’re excited to see your pull request. The ev3aero project thrives on community support like yours, and we're grateful you're helping to improve it. A maintainer will review your changes soon."
