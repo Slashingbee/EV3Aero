@@ -114,6 +114,7 @@ python main.py
 - The prototype version's dont have requirement file's (yet) so you have to download package's manually using PyPI (PIP).
 - More info on the version's is in the version.md file
 - The install guide is only gonna work on the main release, other version's **DO NOT HAVE INSTALL GUIDES** as they install differently and require manual installation!
+- Check the help wanted tag if you want to contribute and do not have idea's what to improve, there is propably task's there.
 ---
 ## Mentions
 
