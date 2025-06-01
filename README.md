@@ -3,6 +3,7 @@
 
 EV3Aero is a fully open-source flight control system designed for use with LEGO Mindstorms EV3 hardware. It enables makers, educators, and simulator enthusiasts to build programmable yokes and flight interfaces using LEGO motors and sensors. Whether you're flying in a simulator, building a home cockpit, or just experimenting, EV3Aero gives you flexible control and expandability. 
 
+Check Example-video.mp4 for a demo of how the system works.
 ---
 
 ## 📦 Features Overview
