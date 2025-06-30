@@ -136,3 +136,5 @@ python main.py
 
 ---
 Note: The client-side (EV3) runs on ev3dev and does not support external Python dependencies — all code is designed to run using built-in libraries only.
+
+Consider star'ing the repo! it helps a lot!
